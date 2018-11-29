@@ -17,3 +17,16 @@ app.get("/:id", (req, res) => {
 app.get("/", (req, res) => {
   queries.listAll().then(students => res.send(students));
 });
+
+app.post("/", (req, res) => {
+  queries.createStudent(req.body).then(res.sendStatus(201));
+});
+
+app.delete("/:id", (req, res) => {
+  queries.deleteStudent(req.params.id).then(res.sendStatus(204));
+});
+app.put("/:id", (req, res) => {
+  queries
+    .updateStudent(req.params.id, req.body)
+    .then(student => res.json(student));
+});
