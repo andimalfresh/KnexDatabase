@@ -17,7 +17,7 @@ exports.seed = function(knex, Promise) {
         {
           name: "Andrew Pedersen",
           fave_animal:
-            "http://www.funnyjunksite.com/pictures/wp-content/uploads/2015/08/Funny-Llama-Picture.jpg (222 kB)",
+            "http://www.funnyjunksite.com/pictures/wp-content/uploads/2015/08/Funny-Llama-Picture.jpg",
           previous_occupation: "Bartender",
           hometown_lat: 30.4383,
           hometown_long: 84.2807,
@@ -51,7 +51,7 @@ exports.seed = function(knex, Promise) {
         },
         {
           name: "Meredith",
-          fave_animal: "https://photos.app.goo.gl/pVpPAWQSEb8arWpH7",
+          fave_animal: "https://www.vermontcountrystore.com/ccstore/v1/images/?source=/file/v4806294265789279641/products/42796.main.png&height=700&width=450&outputFormat=JPEG&quality=0.8",
           previous_occupation: "Paleontologist",
           hometown_lat: 29.7604,
           hometown_long: 95.3698,
